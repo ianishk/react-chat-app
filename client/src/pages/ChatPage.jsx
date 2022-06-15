@@ -5,7 +5,16 @@ import SideBar from "../components/SideBar";
 import { useSelector } from "react-redux";
 import { changeUser } from "../features/userSlice";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import '../css/ChatPage.css'
+
+const LoginFirst = () => {
+  return (
+    <div className="login__first">
+      <h3>Please <Link to="/login" >Login</Link> first to chat</h3>
+    </div>
+  )
+}
 
 const ChatPage = ({socket}) => {
   
@@ -21,7 +30,7 @@ const ChatPage = ({socket}) => {
         <Col xs={8}>
           <ChatBox socket = {socket} />
         </Col>
-      </Row>: <h1>Please login to chat</h1>}
+      </Row>: <LoginFirst />}
     </Container>
   );
 };
