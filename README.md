@@ -21,6 +21,6 @@ This is a ___real time___ MERN stack chat application, in which users can create
 
 ![image](https://user-images.githubusercontent.com/82283347/173744493-6d21bb3b-8655-4784-9482-a417ebafd748.png)
 
-* Chat page
+* Chat page (realtime communication between 2 users)
 
 ![image](https://user-images.githubusercontent.com/82283347/173745338-9d32887d-de3d-4631-896a-79d0bf5c7485.png)
