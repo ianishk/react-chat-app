@@ -16,7 +16,7 @@ const SignupPage = () => {
   const signupHandler = (e) => {
     e.preventDefault();
     const inputData = JSON.stringify(Input);
-    
+
     fetch("http://localhost:5000/user/signup", {
       method: "POST",
       headers: {
@@ -27,12 +27,16 @@ const SignupPage = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        
-        alert("new user created successfully");
-        // navigate to the login page using navigate from react-router-dom
-        navigate("/login");
+        if (data.msg) {
+          alert(data.msg);
+        } else {
+          alert("new user created successfully");
+          setInput({...Input, username: ""});
+          // navigate to the login page using navigate from react-router-dom
+          navigate("/login");
+        }
       });
-  }
+  };
 
   return (
     <Container fluid className="signup__bg-grey">
@@ -69,7 +73,10 @@ const SignupPage = () => {
                 <Button
                   variant="outline-primary"
                   onClick={() => {
-                    setInput({...Input, profile: Math.floor(100000 + Math.random() * 900000)});
+                    setInput({
+                      ...Input,
+                      profile: Math.floor(100000 + Math.random() * 900000),
+                    });
                   }}
                 >
                   Change avatar
