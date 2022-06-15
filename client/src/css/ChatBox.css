@@ -1,0 +1,36 @@
+.chatBox__main{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.chatBox__header{
+    height: 8.5%;
+    padding: 0.2rem 1rem !important;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.chatBox__header div{
+    width: 100%;
+    font-size: larger;
+}
+
+.chatBox__body{
+    height: 81.5%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    overflow-y: scroll;
+}
+.chatBox__footer{
+    height: 10%;
+    padding: 0 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatBox__stack{
+    width: 100%;
+}

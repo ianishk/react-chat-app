@@ -1,0 +1,18 @@
+.sidebar{
+    height: 100%;
+    border-left: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.sidebar__header{
+    padding: 0.51rem 1rem !important;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+.sidebar__join{
+    padding: 1rem 0.5rem !important;
+    border-top: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.sidebar__contacts{
+    height: 81vh;
+    overflow-y: scroll;
+}

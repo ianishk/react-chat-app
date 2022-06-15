@@ -1,0 +1,15 @@
+.user__main{
+    padding: 0.5rem 1rem !important;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.selected{
+    background-color: #4285F4;
+    color: white;
+}
+
+.user__main label{
+    margin-left: 0.75rem;
+    text-transform: capitalize;
+}
