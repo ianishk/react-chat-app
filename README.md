@@ -1,6 +1,7 @@
 # react-chat-app
 ## About 
-This is a ___real time___ MERN stack chat application, in which users can create their own account and can add friends to communicate with each other
+This is a ___real time___ MERN stack chat application, in which users can create their own account and can add friends to communicate with each other. The react frontend is deployed in netlify and the Node.js backend server is deployed in heroku. \
+Deployed link: https://react-chat-app-anish.netlify.app
 ## Technologies used
 * React
 * React bootstrap
